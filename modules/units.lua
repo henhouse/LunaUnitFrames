@@ -272,6 +272,8 @@ local function OnClick()
 			else
 				TargetUnit(this.unit)
 			end
+		elseif action == "bindsight" then
+			SendChatMessage(".bindsight "..UnitName(this.unit))
 		else
 			LunaUF:Mouseover(action)
 		end
